@@ -1,16 +1,16 @@
 -- Anshika Sharma 
 
-INSTRUCTIONS
+1. INSTRUCTIONS
 
 Once you are done with your code. Push your code to your github account
 Make the repository public. Write a Readme for installation/running or any other information
 Test if it's accessible publicly.
 Share the repository link in the google form provided
 
-PROBLEM STATEMENT
+2. PROBLEM STATEMENT
 You are building the backend for a smart flashcard system. Users can add flashcards with just a question and answer — no subject is specified by them. Your backend will automatically determine the subject of the flashcard based on the text (e.g., presence of keywords like "photosynthesis" → "Biology").
 Later, a student can request flashcards from any subject, and your API should return a mixed batch intelligently.
-Task 1: Add Flashcard with Subject Inference
+-- Task 1: Add Flashcard with Subject Inference
 Endpoint:
 POST /flashcard
 {
@@ -38,7 +38,7 @@ Detect the subject of the flashcard (e.g., "Physics") based on the question.
 
 Store student_id, question, answer, and subject.
 
-Task 2: Get Flashcards by Mixed Subjects
+-- Task 2: Get Flashcards by Mixed Subjects
 Endpoint:
 GET /get-subject?student_id=stu001&limit=5
 
@@ -56,7 +56,7 @@ Output:.
   }
 ]
 
-Behavior:
+-- Behavior:
 Return up to limit number of flashcards from different subjects.
 
 
@@ -65,6 +65,6 @@ Shuffle to mix subjects.
 
 Only return flashcards for the given student
 
-INSTALLATION
+3. INSTALLATION
 
 pip install fastapi uvicorn
